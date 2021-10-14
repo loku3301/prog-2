@@ -12,6 +12,10 @@ class Integer(object):
 		lib.Integer_delete.argtypes = [ctypes.c_void_p]
 		self.obj = lib.Integer_new(val)
 
+		lib.Integer_fib.argtypes = [ctypes.c_int]
+		lib.Integer_fib.argtypes = ctypes.c_int
+
+
 	def get(self):
 		return lib.Integer_get(self.obj)
 
@@ -20,3 +24,6 @@ class Integer(object):
         
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
+
+	def fib(self, val):
+		return lib.Integer_fib(self.obj)
