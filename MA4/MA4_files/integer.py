@@ -13,7 +13,7 @@ class Integer(object):
 		self.obj = lib.Integer_new(val)
 
 		lib.Integer_fib.argtypes = [ctypes.c_int]
-		lib.Integer_fib.argtypes = ctypes.c_int
+		lib.Integer_fib.restype = ctypes.c_int
 
 
 	def get(self):
