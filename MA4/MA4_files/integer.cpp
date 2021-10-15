@@ -26,7 +26,7 @@ void Integer::set(int n){
 	}
 
 int Integer::fib(){
-    return fibo(val)
+    return fibo(val);
 	}
 
 int Integer::fibo(int n){
