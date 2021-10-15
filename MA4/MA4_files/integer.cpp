@@ -7,7 +7,7 @@ class Integer{
 		int get();
 		void set(int);
 		int fib();
-		int fibo(int)
+		int fibo(int);
 
 	private:
 		int val;
@@ -29,10 +29,10 @@ int Integer::fib(){
     return fibo(val)
 	}
 
-int fibo(int n)
+int fibo(int n){
 	if (n <= 1)
 		return n;
-	return fibo(n-1) + fib(n-2);
+	return fibo(n-1) + fibo(n-2);
 	}
 
 
