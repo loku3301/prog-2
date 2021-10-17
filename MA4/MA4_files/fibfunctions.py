@@ -1,6 +1,6 @@
 #from numba import njit
 
-@njit
+#@njit
 def fib_numba_py(n):
     if n <= 1:
         return n
