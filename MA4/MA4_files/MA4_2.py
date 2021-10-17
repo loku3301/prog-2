@@ -8,7 +8,7 @@
 import matplotlib.pyplot as plt
 from integer import Integer
 from fibfunctions import fib_pure_py
-from fibfunctions import fib_numba_py
+#from fibfunctions import fib_numba_py
 from time import perf_counter as pc
 
 
