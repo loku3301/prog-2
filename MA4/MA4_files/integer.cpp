@@ -7,10 +7,10 @@ class Integer{
 		int get();
 		void set(int);
 		int fib();
-		int fibo(int);
 
 	private:
 		int val;
+		int fibo(int);
 	};
  
 Integer::Integer(int n){
