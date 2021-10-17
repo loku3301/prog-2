@@ -36,12 +36,12 @@ def main():
 		end = pc()
 		c_integer_times.append(end-start)
 			
-	plt.plot([*n_range], pure_py_times, label = 'pure py fib')
+	plt.plot([*n_range], pure_py_times) #, label = 'pure py fib')
 	# plt.plot([*n_range], numba_py_times, label = 'numba py fib')
-	plt.plot([*n_range], c_integer_times, label = 'C++ fib')
-	plt.xlabel('n')
-	plt.ylabel('time (s)')
-	plt.legend()
+	plt.plot([*n_range], c_integer_times)#, label = 'C++ fib')
+	# plt.xlabel('n')
+	# plt.ylabel('time (s)')
+	# plt.legend()
 	plt.savefig('fib_plot.png')
 	
 	######### N = 1:30 #########
