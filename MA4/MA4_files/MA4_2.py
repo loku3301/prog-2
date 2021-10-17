@@ -25,10 +25,10 @@ def main():
 		end = pc()
 		pure_py_times.append(end-start)	
 			
-		start = pc()
-		fib_numba_py(i)
-		end = pc()
-		numba_py_times.append(end-start)
+		# start = pc()
+		# fib_numba_py(i)
+		# end = pc()
+		# numba_py_times.append(end-start)
 
 		f = Integer(i)
 		start = pc()
@@ -37,7 +37,7 @@ def main():
 		c_integer_times.append(end-start)
 			
 	plt.plot([*n_range], pure_py_times, label = 'pure py fib')
-	plt.plot([*n_range], numba_py_times, label = 'numba py fib')
+	# plt.plot([*n_range], numba_py_times, label = 'numba py fib')
 	plt.plot([*n_range], c_integer_times, label = 'C++ fib')
 	plt.xlabel('n')
 	plt.ylabel('time (s)')
