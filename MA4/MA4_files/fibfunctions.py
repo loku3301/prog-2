@@ -1,4 +1,4 @@
-from numba import njit
+#from numba import njit
 
 @njit
 def fib_numba_py(n):
