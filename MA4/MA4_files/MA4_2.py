@@ -4,7 +4,8 @@
 # KVAR TILL NÄSTA PRESENTATION
 #fib 47 ger konstigt svar i c++, varför?
 #presentera figurer
-
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from integer import Integer
 from fibfunctions import fib_pure_py
@@ -36,12 +37,12 @@ def main():
 		end = pc()
 		c_integer_times.append(end-start)
 			
-	plt.plot([*n_range], pure_py_times) #, label = 'pure py fib')
+	plt.plot([*n_range], pure_py_times, label = 'pure py fib')
 	# plt.plot([*n_range], numba_py_times, label = 'numba py fib')
-	plt.plot([*n_range], c_integer_times)#, label = 'C++ fib')
-	# plt.xlabel('n')
-	# plt.ylabel('time (s)')
-	# plt.legend()
+	plt.plot([*n_range], c_integer_times, label = 'C++ fib')
+	plt.xlabel('n')
+	plt.ylabel('time (s)')
+	plt.legend()
 	plt.savefig('fib_plot.png')
 	
 	######### N = 1:30 #########
