@@ -14,7 +14,7 @@ def main():
 	c_integer_times = []
 	
 	######### N = 30:45 #########
-	n_range = range(20, 35)
+	n_range = range(30, 46)
 	for i in n_range:
 		start = pc()
 		print('pure fib of ', i, ': ', fib_pure_py(i))
